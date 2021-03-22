@@ -24,8 +24,15 @@
     }
 </style>
 <script>
-    
+    function search() {
+        searchTerm = document.getElementById("search").value;
+        link = "https://google.com/search?q=" + searchTerm;
+        window.open(link);
+    }
 </script>
 <h1>SearchPlus</h1>
 <span>Inspirational Quote: Your <b>Next</b>...</span>
-<div><input placeholder="Search"></div><button onclick="search()">Search</button>
+<div>
+    <input id="search" placeholder="Search">
+</div>
+<button onclick="search()">Search</button>
