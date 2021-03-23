@@ -1,4 +1,5 @@
 <title>SearchPlus</title>
+<body id="body">
 <style>
     * {
         margin: 10px;
@@ -22,8 +23,23 @@
         font-size: 55px;
         margin-bottom: 24px;
     }
+    .settings {
+        position: fixed;
+        bottom: 0px;
+        text-decoration: none;
+        color: black;
+        background: rgb(224, 224, 224);
+        right: 0px;
+        border-radius: 10px;
+        padding: 10px;
+    }
 </style>
 <script>
+    bg = localStorage.getItem("bg");
+    color = localStorage.getItem("color");
+    engine = localStorage.getItem("engine");
+    document.getElementById("body").style.background = bg;
+    document.getElementById("body").style.color = color;
     function search() {
         searchTerm = document.getElementById("search").value;
         link = "https://google.com/search?q=" + searchTerm;
@@ -31,8 +47,9 @@
     }
 </script>
 <h1>SearchPlus</h1>
-<span>Inspirational Quote: Your <b>Next</b>...</span>
+<span>Inspirational Quote: Follow Your  <b>Dreams</b>!</span>
 <div>
     <input id="search" placeholder="Search">
 </div>
 <button onclick="search()">Search</button>
+<a href="settings.html" class="settings">Settings</a>

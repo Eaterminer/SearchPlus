@@ -1,0 +1,60 @@
+<title>Settings - SearchPlus</title>
+<style>
+    * {
+        margin: 10px;
+        font-size: 18px;
+    }
+    body {
+        font-family: arial;
+        text-align: center;
+    }
+    button {
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+    }
+    h1 {
+        border-bottom: 1px solid grey;
+        font-size: 55px;
+        margin-bottom: 24px;
+    }
+    .settings {
+        position: fixed;
+        bottom: 0px;
+        text-decoration: none;
+        color: black;
+        background: rgb(224, 224, 224);
+        right: 0px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
+<script>
+    function saveBg() {
+        bg = document.getElementById("bg").value;
+        localStorage.setItem("bg", bg);
+    }
+    function saveColor() {
+        bg = document.getElementById("color").value;
+        localStorage.setItem("color", color);
+    }
+    function saveEngine() {
+        engine = document.getElementById("engine").value;
+        localStorage.setItem("engine", engine);
+    }
+</script>
+<h1>Settings - SearchPlus</h1>
+<div>
+    Background: <input id="bg" type="color"><button onclick="saveBg()">Save</button>
+</div>
+<div>
+    Text Color: <input id="color" type="color"><button onclick="saveColor()">Save</button>
+</div>
+<div>
+    Search Engine URL: <input id="engine" type="color"><button onclick="saveEngine()">Save</button>
+</div>
+
+
+
+
+<a href="index.html" class="settings">Go back</a>
