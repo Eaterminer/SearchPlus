@@ -21,5 +21,4 @@ color = localStorage.getItem("color");
 bg = localStorage.getItem("bg");
 engine = localStorage.getItem("engine");
 document.getElementById("body").style.color = color;
-document.getElementById("body").style.color = "#dcdcdc";
 document.getElementById("body").style.background = bg;
