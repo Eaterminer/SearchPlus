@@ -1,18 +1,7 @@
 <title>SearchPlus</title>
 <body id="body">
 <link rel="stylesheet" href="styles.css">
-<script>
-    bg = localStorage.getItem("bg");
-    color = localStorage.getItem("color");
-    engine = localStorage.getItem("engine");
-    document.getElementById("body").style.background = bg;
-    document.getElementById("body").style.color = color;
-    function search() {
-        searchTerm = document.getElementById("search").value;
-        link = "https://google.com/search?q=" + searchTerm;
-        window.open(link);
-    }
-</script>
+<script src="script.js"></script>
 <h1>SearchPlus</h1>
 <span>Inspirational Quote: Follow Your  <b>Dreams</b>!</span>
 <div>
