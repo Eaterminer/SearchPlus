@@ -1,3 +1,11 @@
+var color, bg, engine, doc, body;
+doc = document;
+body = doc.getElementById("body");
+
+color = localStorage.getItem("color");
+bg = localStorage.getItem("bg");
+engine = localStorage.getItem("engine");
+
 function saveBg() {
     bg = document.getElementById("bg").value;
     localStorage.setItem("bg", bg);
@@ -17,8 +25,6 @@ function search() {
     link = "https://google.com/search?q=" + searchTerm;
     window.open(link);
 }
-color = localStorage.getItem("color");
-bg = localStorage.getItem("bg");
-engine = localStorage.getItem("engine");
-document.getElementById("body").style.color = color;
-document.getElementById("body").style.background = bg;
+
+body.style.color = color;
+body.style.background = bg;
