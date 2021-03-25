@@ -1,42 +1,64 @@
-* {
-        margin: 10px;
-        font-size: 18px;
-    }
-    body {
-        font-family: arial;
-        text-align: center;
-    }
-    input {
-        border: 0px solid black;
-        border-bottom: 1px solid black;
-    }
-    button {
-        border-radius: 10px;
-        padding: 10px;
-        border: none;
-    }
-    h1 {
-        border-bottom: 1px solid grey;
-        font-size: 55px;
-        margin-bottom: 24px;
-    }
-    .settings {
-        position: fixed;
-        bottom: 0px;
-        text-decoration: none;
-        color: black;
-        background: rgb(224, 224, 224);
-        right: 0px;
-        border-radius: 10px;
-        padding: 10px;
-    }
-    .version {
-        position: fixed;
-        bottom: 0px;
-        text-decoration: none;
-        color: black;
-        background: rgb(224, 224, 224);
-        left: 0px;
-        border-radius: 10px;
-        padding: 10px;
-    }
+body {
+	font-family: "Segoe UI", Frutiger, arial;
+	text-align: center;
+	margin: 10px;
+	font-size: 18px;
+	border: none;
+	text-decoration: none;
+}
+
+input {
+	border: 0px solid black;
+	margin: 10px;
+	font-size: 18px;
+	border-bottom: 1px solid black;
+}
+
+button {
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 16px;
+	background: rgb(224, 224, 224);
+	border: none;
+}
+
+h1 {
+	border-bottom: 1px solid grey;
+	font-size: 55px;
+	margin-bottom: 28px;
+}
+
+.settings {
+	position: fixed;
+	margin: 10px;
+	bottom: 0px;
+	text-decoration: none;
+	color: black;
+	background: rgb(224, 224, 224);
+	right: 0px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.version {
+	position: fixed;
+	margin: 10px;
+	bottom: 0px;
+	text-decoration: none;
+	color: black;
+	background: rgb(224, 224, 224);
+	left: 0px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+a {
+	border-radius: 10px;
+	padding: 10px;
+	background: rgb(224, 224, 224);
+	color: inherit;
+	border: none;
+	font-size: 16px;
+	text-decoration: none;
+}
+
