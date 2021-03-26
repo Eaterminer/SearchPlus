@@ -11,6 +11,26 @@ function saveBg() {
     localStorage.setItem("bg", bg);
     document.getElementById("body").style.background = bg;
 }
+function saveBg1() {
+    bg = "url(bg1.webp";
+    localStorage.setItem("bg", bg);
+    document.getElementById("body").style.background = bg;
+}
+function saveBg2() {
+    bg = "url(bg2.jpg";
+    localStorage.setItem("bg", bg);
+    document.getElementById("body").style.background = bg;
+}
+function saveBg3() {
+    bg = "url(bg3.jpg";
+    localStorage.setItem("bg", bg);
+    document.getElementById("body").style.background = bg;
+}
+function saveBg4() {
+    bg = "url(bg4.jpg";
+    localStorage.setItem("bg", bg);
+    document.getElementById("body").style.background = bg;
+}
 function saveColor() {
     color = document.getElementById("color").value;
     localStorage.setItem("color", color);
