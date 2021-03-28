@@ -4,6 +4,9 @@ body {
 	margin: 10px;
 	font-size: 18px;
 	border: none;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: center;
 	text-decoration: none;
 }
 

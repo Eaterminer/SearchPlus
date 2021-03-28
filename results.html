@@ -1,0 +1,113 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+<title>SearchPlus</title>
+<body id="body">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script><style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  border-radius: 0px;
+  background-color: #aaa;
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+
+<h1>Search Plus</h1>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a website">
+    <ul id="myMenu">
+      <li><a href="https://wikipedia.org">Wikipedia</a></li>
+      <li><a href="https://google.com">Google</a></li>
+      <li><a href="https://maps.google.com">Google Maps</a></li>
+      <li><a href="https://slides.google.com">Google Slides</a></li>
+      <li><a href="https://docs.google.com">Google Docs</a></li>
+      <li><a href="https://outlook.office.com">Outlook - Email</a></li>
+      <li><a href="https://office.com">Office</a></li>
+      <li><a href="https://edmodo.com">Edmodo - Education</a></li>
+      <li><a href="https://w3schools.com">W3Schools - Coding</a></li>
+      <li><a href="https://youtube.com">YouTube</a></li>
+      <li><a href="https://waimate-high.school.nz">Waimate High - Schooling</a></li>
+      <li><a href="https://github.com">Github - Coding</a></li>
+      <li><a href="https://discord.com">Discord - Social Media</a></li>
+      <li><a href="index.html">Go Back - SearchPlus</a></li>
+      <li><a href="settings.html">Change Settings - SearchPlus</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;">
+    <h2>Page Opener</h2>
+    <p>Now A Thing!</p>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+	
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>

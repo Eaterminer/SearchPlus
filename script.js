@@ -45,6 +45,10 @@ function search() {
     link = "https://google.com/search?q=" + searchTerm;
     window.open(link);
 }
+function searchPages() {
+    searchPage = document.getElementById("search").value;
+    location.replace("results.html")
+}
 
 body.style.color = color;
 body.style.background = bg;
